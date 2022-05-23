@@ -4,8 +4,10 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="../../../../../../layout/custom_preview.xml" value="0.1935185185185185" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.23369565217391305" />
         <entry key="app/src/main/res/layout/activity_my_react.xml" value="0.31476449275362317" />
         <entry key="app/src/main/res/layout/activity_my_react_test.xml" value="0.31476449275362317" />
+        <entry key="app/src/main/res/layout/rn_layout.xml" value="0.23369565217391305" />
       </map>
     </option>
   </component>

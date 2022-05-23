@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.Log;
 
 import com.awesomeproject.MainApplication;
+import com.awesomeproject.utils.AppContext;
 import com.facebook.react.ReactApplication;
 import com.facebook.react.ReactInstanceManager;
 import com.facebook.react.ReactNativeHost;
@@ -20,7 +21,7 @@ public class BundleUtil {
         if(!assetName.startsWith("assets://")) {
             source = "assets://" + assetName;
         }
-        getCatalystInstance().loadScriptFromAssets(MainApplication.app.getAssets(), source,false);
+        getCatalystInstance().loadScriptFromAssets(AppContext.getAppContext().getAssets(), source,false);
     }
 
 
@@ -46,7 +47,7 @@ public class BundleUtil {
 
 
     public static ReactNativeHost getReactNativeHost(){
-        return ((ReactApplication)MainApplication.app).getReactNativeHost();
+        return ((ReactApplication)AppContext.getAppContext()).getReactNativeHost();
     }
 
 }
